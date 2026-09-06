@@ -50807,5 +50807,107 @@
         "checkedAt": "2026-09-05T15:47:13.376Z"
       }
     ]
+  },
+  {
+    "date": "2026-09-06",
+    "time": "2026-09-06T16:04:57.017Z",
+    "results": [
+      {
+        "keyword": "live chat",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=live%20chat\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T15:59:08.823Z"
+      },
+      {
+        "keyword": "AI chatbot",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=AI%20chatbot\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T15:59:40.336Z"
+      },
+      {
+        "keyword": "chatbot",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=chatbot\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:00:11.857Z"
+      },
+      {
+        "keyword": "inbox",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=inbox\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:00:43.375Z"
+      },
+      {
+        "keyword": "chat",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=chat\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:01:14.885Z"
+      },
+      {
+        "keyword": "help center",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=help%20center\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:01:46.390Z"
+      },
+      {
+        "keyword": "FAQ",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=FAQ\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:02:17.903Z"
+      },
+      {
+        "keyword": "livechat",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=livechat\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:02:49.411Z"
+      },
+      {
+        "keyword": "WhatsApp",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=WhatsApp\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:03:20.938Z"
+      },
+      {
+        "keyword": "helpdesk",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=helpdesk\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:03:52.454Z"
+      },
+      {
+        "keyword": "customer support",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=customer%20support\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:04:23.958Z"
+      },
+      {
+        "keyword": "ai chat",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {},
+        "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://apps.shopify.com/search?q=ai%20chat\", waiting until \"networkidle\"\n",
+        "checkedAt": "2026-09-06T16:04:55.463Z"
+      }
+    ]
   }
 ]
