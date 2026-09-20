@@ -54886,5 +54886,359 @@
         "checkedAt": "2026-09-19T16:14:34.628Z"
       }
     ]
+  },
+  {
+    "date": "2026-09-20",
+    "time": "2026-09-20T16:42:01.177Z",
+    "results": [
+      {
+        "keyword": "live chat",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 3,
+          "Rep AI": 17,
+          "Moosedesk": 2,
+          "Zipchat": 5,
+          "LiveChat": 8,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 7,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "moosedesk",
+          "tidio-chat",
+          "channelwill-chat",
+          "zipchat",
+          "chatway",
+          "vanchat",
+          "livechat",
+          "inbox",
+          "chizy-ai-chatbot"
+        ],
+        "checkedAt": "2026-09-20T16:41:09.435Z"
+      },
+      {
+        "keyword": "AI chatbot",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 6,
+          "Rep AI": null,
+          "Moosedesk": 3,
+          "Zipchat": 5,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 10,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "smartbot",
+          "moosedesk",
+          "channelwill-chat",
+          "zipchat",
+          "tidio-chat",
+          "chizy-ai-chatbot",
+          "flyweight-chatbot",
+          "chatway",
+          "vanchat"
+        ],
+        "checkedAt": "2026-09-20T16:41:14.042Z"
+      },
+      {
+        "keyword": "chatbot",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 4,
+          "Rep AI": null,
+          "Moosedesk": 3,
+          "Zipchat": 6,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 10,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "smartbot",
+          "moosedesk",
+          "tidio-chat",
+          "channelwill-chat",
+          "zipchat",
+          "chatway",
+          "chizy-ai-chatbot",
+          "flyweight-chatbot",
+          "vanchat"
+        ],
+        "checkedAt": "2026-09-20T16:41:18.644Z"
+      },
+      {
+        "keyword": "inbox",
+        "position": 2,
+        "organicPosition": 2,
+        "competitors": {
+          "Tidio": 3,
+          "Rep AI": null,
+          "Moosedesk": 5,
+          "Zipchat": 12,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "inbox",
+          "chatty",
+          "tidio-chat",
+          "channelwill-chat",
+          "moosedesk",
+          "salesmartly-chat",
+          "chatway",
+          "moose-whatsapp-chat-button",
+          "algoshop-ai-sales-chatbot",
+          "dondy-marketing-ai"
+        ],
+        "checkedAt": "2026-09-20T16:41:23.092Z"
+      },
+      {
+        "keyword": "chat",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 5,
+          "Rep AI": null,
+          "Moosedesk": 4,
+          "Zipchat": 2,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 17,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "zipchat",
+          "inbox",
+          "moosedesk",
+          "tidio-chat",
+          "channelwill-chat",
+          "dondy-marketing-ai",
+          "moose-whatsapp-chat-button",
+          "chaty",
+          "wava-abandoned-cart-recovery"
+        ],
+        "checkedAt": "2026-09-20T16:41:27.673Z"
+      },
+      {
+        "keyword": "help center",
+        "position": 4,
+        "organicPosition": 4,
+        "competitors": {
+          "Tidio": 19,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": 11,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "faqapp",
+          "ga-faq",
+          "instant-faq-help-center",
+          "chatty",
+          "section-factory",
+          "betterdocs-knowledgebase",
+          "helpdesk",
+          "ecomposer",
+          "storefaq",
+          "commslayer"
+        ],
+        "checkedAt": "2026-09-20T16:41:32.235Z"
+      },
+      {
+        "keyword": "FAQ",
+        "position": 2,
+        "organicPosition": 2,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": 6,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "storefaq",
+          "chatty",
+          "faqapp",
+          "product-description-accordion",
+          "faqs-plus",
+          "moosedesk",
+          "faq-star",
+          "ga-faq",
+          "channelwill-chat",
+          "easyfaq-product-faq-builder"
+        ],
+        "checkedAt": "2026-09-20T16:41:36.731Z"
+      },
+      {
+        "keyword": "livechat",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": 3,
+          "Zipchat": null,
+          "LiveChat": 2,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "livechat",
+          "moosedesk",
+          "whatkabot",
+          "algoshop-ai-sales-chatbot",
+          "chatonbo",
+          "whatflow-ai",
+          "chatgpt-customer-service-bot",
+          "ragchat-ai-sales-support",
+          "intellect-ai"
+        ],
+        "checkedAt": "2026-09-20T16:41:41.244Z"
+      },
+      {
+        "keyword": "WhatsApp",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "whatsapp",
+          "dondy-marketing-ai",
+          "moose-whatsapp-chat-button",
+          "carthike-recovery",
+          "wava-abandoned-cart-recovery",
+          "whatsapp-chat-button-squadkin",
+          "click-to-chat",
+          "whatflow",
+          "whatflow-official-api",
+          "kwikengage"
+        ],
+        "checkedAt": "2026-09-20T16:41:45.794Z"
+      },
+      {
+        "keyword": "helpdesk",
+        "position": 16,
+        "organicPosition": 16,
+        "competitors": {
+          "Tidio": 7,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": 3,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": 8
+        },
+        "top10organic": [
+          "helpdesk",
+          "commslayer",
+          "zipchat",
+          "botspace-ai-chat",
+          "helpdesk-app",
+          "helpdesk-mx",
+          "tidio-chat",
+          "reamaze",
+          "customer-support",
+          "chatway"
+        ],
+        "checkedAt": "2026-09-20T16:41:50.339Z"
+      },
+      {
+        "keyword": "customer support",
+        "position": 9,
+        "organicPosition": 9,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": 15,
+          "Zipchat": 12,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "customer-support",
+          "login-as-customer",
+          "bundle-deals",
+          "order-printer-pro",
+          "helpdesk-app",
+          "shipped-suite",
+          "shopping-assistant-by-shoplyai",
+          "inbox",
+          "chatty",
+          "supportify-1"
+        ],
+        "checkedAt": "2026-09-20T16:41:55.073Z"
+      },
+      {
+        "keyword": "ai chat",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 12,
+          "Rep AI": 18,
+          "Moosedesk": 4,
+          "Zipchat": 5,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 13,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "flyweight-chatbot",
+          "smartbot",
+          "moosedesk",
+          "zipchat",
+          "channelwill-chat",
+          "verifast-sales-assistant",
+          "botspace-ai-chat",
+          "chizy-ai-chatbot",
+          "spur-automated-support-marketing"
+        ],
+        "checkedAt": "2026-09-20T16:41:59.638Z"
+      }
+    ]
   }
 ]
