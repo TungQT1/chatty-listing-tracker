@@ -57674,5 +57674,293 @@
         "checkedAt": "2026-09-27T17:29:47.591Z"
       }
     ]
+  },
+  {
+    "date": "2026-09-28",
+    "time": "2026-09-28T20:00:29.829Z",
+    "results": [
+      {
+        "keyword": "live chat",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 3,
+          "Rep AI": 17,
+          "Moosedesk": 2,
+          "Zipchat": 5,
+          "LiveChat": 9,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 20,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "moosedesk",
+          "tidio-chat",
+          "channelwill-chat",
+          "zipchat",
+          "chatway",
+          "inbox",
+          "chizy-ai-chatbot",
+          "livechat",
+          "helpdesk-mx"
+        ],
+        "checkedAt": "2026-09-28T19:59:37.948Z"
+      },
+      {
+        "keyword": "AI chatbot",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 6,
+          "Rep AI": null,
+          "Moosedesk": 2,
+          "Zipchat": 5,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 10,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "moosedesk",
+          "smartbot",
+          "channelwill-chat",
+          "zipchat",
+          "tidio-chat",
+          "flyweight-chatbot",
+          "chizy-ai-chatbot",
+          "chatway",
+          "vanchat"
+        ],
+        "checkedAt": "2026-09-28T19:59:42.809Z"
+      },
+      {
+        "keyword": "chatbot",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 2,
+          "Rep AI": null,
+          "Moosedesk": 4,
+          "Zipchat": 6,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 10,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "tidio-chat",
+          "smartbot",
+          "moosedesk",
+          "channelwill-chat",
+          "zipchat",
+          "flyweight-chatbot",
+          "chatway",
+          "chizy-ai-chatbot",
+          "vanchat"
+        ],
+        "checkedAt": "2026-09-28T19:59:47.653Z"
+      },
+      {
+        "keyword": "inbox",
+        "position": 2,
+        "organicPosition": 2,
+        "competitors": {
+          "Tidio": 3,
+          "Rep AI": null,
+          "Moosedesk": 5,
+          "Zipchat": 12,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "inbox",
+          "chatty",
+          "tidio-chat",
+          "channelwill-chat",
+          "moosedesk",
+          "chatway",
+          "salesmartly-chat",
+          "moose-whatsapp-chat-button",
+          "algoshop-ai-sales-chatbot",
+          "dondy-marketing-ai"
+        ],
+        "checkedAt": "2026-09-28T19:59:52.424Z"
+      },
+      {
+        "keyword": "chat",
+        "position": 1,
+        "organicPosition": 1,
+        "competitors": {
+          "Tidio": 4,
+          "Rep AI": null,
+          "Moosedesk": 7,
+          "Zipchat": 3,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": 14,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "chatty",
+          "inbox",
+          "zipchat",
+          "tidio-chat",
+          "dondy-marketing-ai",
+          "channelwill-chat",
+          "moosedesk",
+          "moose-whatsapp-chat-button",
+          "wava-abandoned-cart-recovery",
+          "chaty"
+        ],
+        "checkedAt": "2026-09-28T19:59:57.251Z"
+      },
+      {
+        "keyword": "help center",
+        "position": 4,
+        "organicPosition": 4,
+        "competitors": {
+          "Tidio": 20,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": 9,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [
+          "faqapp",
+          "ga-faq",
+          "instant-faq-help-center",
+          "chatty",
+          "section-factory",
+          "betterdocs-knowledgebase",
+          "helpdesk",
+          "commslayer",
+          "zipchat",
+          "ecomposer"
+        ],
+        "checkedAt": "2026-09-28T20:00:02.142Z"
+      },
+      {
+        "keyword": "FAQ",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [],
+        "checkedAt": "2026-09-28T20:00:06.307Z"
+      },
+      {
+        "keyword": "livechat",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [],
+        "checkedAt": "2026-09-28T20:00:10.756Z"
+      },
+      {
+        "keyword": "WhatsApp",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [],
+        "checkedAt": "2026-09-28T20:00:15.094Z"
+      },
+      {
+        "keyword": "helpdesk",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [],
+        "checkedAt": "2026-09-28T20:00:19.244Z"
+      },
+      {
+        "keyword": "customer support",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [],
+        "checkedAt": "2026-09-28T20:00:23.743Z"
+      },
+      {
+        "keyword": "ai chat",
+        "position": null,
+        "organicPosition": null,
+        "competitors": {
+          "Tidio": null,
+          "Rep AI": null,
+          "Moosedesk": null,
+          "Zipchat": null,
+          "LiveChat": null,
+          "tawk.to": null,
+          "Gorgias": null,
+          "Vanchat": null,
+          "Reamaze": null
+        },
+        "top10organic": [],
+        "checkedAt": "2026-09-28T20:00:28.293Z"
+      }
+    ]
   }
 ]
