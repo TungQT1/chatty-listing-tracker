@@ -1,14 +1,13 @@
 /**
  * Chatty Daily Rank Checker — GitHub Actions version
  * Runs every day at 8pm Bangkok (13:00 UTC)
- * - Detects big ranking changes → sends Slack alert immediately
- * - Every 2 weeks → sends bi-weekly summary report to Slack
+ * - Detects big ranking changes and logs them. Slack alerts are off.
+ * - Bi-weekly summary is logged only. Slack reports are off.
  */
 
 const { chromium } = require('playwright');
 const fs   = require('fs');
 const path = require('path');
-const https = require('https');
 
 // ─── Config ────────────────────────────────────────────────────────────────
 const SLACK_TOKEN   = process.env.SLACK_TOKEN;
@@ -47,28 +46,8 @@ const CHATTY_DANGER    = 5;
 
 // ─── Slack ─────────────────────────────────────────────────────────────────
 function slackPost(text) {
-  return new Promise((resolve, reject) => {
-    const body = JSON.stringify({ channel: SLACK_CHANNEL, text });
-    const req = https.request({
-      hostname: 'slack.com', path: '/api/chat.postMessage', method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${SLACK_TOKEN}`,
-        'Content-Type': 'application/json; charset=utf-8',
-        'Content-Length': Buffer.byteLength(body),
-      }
-    }, res => {
-      let d = '';
-      res.on('data', c => d += c);
-      res.on('end', () => {
-        const result = JSON.parse(d);
-        if (!result.ok) console.error('Slack error:', result.error);
-        resolve(result);
-      });
-    });
-    req.on('error', reject);
-    req.write(body);
-    req.end();
-  });
+  console.log('Slack report disabled. Not posted:\n' + text);
+  return Promise.resolve({ ok: true, skipped: true });
 }
 
 // ─── Shopify search ────────────────────────────────────────────────────────
@@ -271,9 +250,9 @@ async function run() {
   // ── Alert check ──────────────────────────────────────────────────────────
   const alerts = detectAlerts(current, previous);
   if (alerts.length > 0) {
-    console.log(`\n🚨 ${alerts.length} alert(s) detected — sending Slack message`);
+    console.log(`\n🚨 ${alerts.length} alert(s) detected — Slack report disabled`);
     await slackPost(buildAlertMessage(alerts));
-    console.log('Slack alert sent.');
+    console.log('Slack alert skipped.');
   } else {
     console.log('\nNo major changes detected. No alert sent.');
   }
@@ -285,13 +264,13 @@ async function run() {
   const daysSince  = lastReport ? Math.floor((today - lastReport) / (1000 * 60 * 60 * 24)) : 999;
 
   if (daysSince >= 14) {
-    console.log('\n📊 Bi-weekly report due — sending to Slack');
+    console.log('\n📊 Bi-weekly report due — Slack report disabled');
     const twoWeeksAgoDate = new Date(today - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
     const twoWeeksAgo = log.filter(e => e.date <= twoWeeksAgoDate && e.results.some(r => r.organicPosition !== undefined)).slice(-1)[0] || null;
     await slackPost(buildBiweeklyReport(current, twoWeeksAgo));
     state.lastReportDate = today.toISOString().split('T')[0];
     saveState(state);
-    console.log('Bi-weekly report sent.');
+    console.log('Bi-weekly report skipped.');
   } else {
     console.log(`Next bi-weekly report in ${14 - daysSince} day(s).`);
   }
