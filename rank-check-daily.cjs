@@ -10,9 +10,6 @@ const fs   = require('fs');
 const path = require('path');
 
 // ─── Config ────────────────────────────────────────────────────────────────
-const SLACK_TOKEN   = process.env.SLACK_TOKEN;
-const SLACK_CHANNEL = 'C0AJBNMS732'; // #chatty-super-bot
-
 const KEYWORDS = [
   'live chat', 'AI chatbot', 'chatbot', 'inbox', 'chat',
   'help center', 'FAQ', 'livechat', 'WhatsApp',
@@ -45,11 +42,6 @@ const COMP_RISE_ALERT  = 3;
 const CHATTY_DANGER    = 5;
 
 // ─── Slack ─────────────────────────────────────────────────────────────────
-function slackPost(text) {
-  console.log('Slack report disabled. Not posted:\n' + text);
-  return Promise.resolve({ ok: true, skipped: true });
-}
-
 // ─── Shopify search ────────────────────────────────────────────────────────
 async function searchKeyword(page, keyword) {
   const url = `https://apps.shopify.com/search?q=${encodeURIComponent(keyword)}`;
@@ -148,62 +140,6 @@ function detectAlerts(current, previous) {
   return alerts;
 }
 
-// ─── Slack message builders ────────────────────────────────────────────────
-function rankEmoji(pos) {
-  if (!pos) return '⚫';
-  if (pos === 1) return '🥇';
-  if (pos <= 3) return '🟢';
-  if (pos <= 6) return '🟡';
-  if (pos <= 10) return '🟠';
-  return '🔴';
-}
-
-function buildAlertMessage(alerts) {
-  const lines = [':rotating_light: *Chatty Ranking Alert — Action Needed*\n'];
-  alerts.forEach(a => {
-    if (a.type === 'chatty_drop') {
-      lines.push(`${a.isP0 ? '🚨' : '⚠️'} *"${a.keyword}"* — Chatty dropped from #${a.from} to #${a.to} (↓${a.drop} spots)${a.isP0 ? ' — P0 KEY!' : ''}`);
-    } else if (a.type === 'chatty_danger') {
-      lines.push(`🚨 *"${a.keyword}"* — Chatty fell to #${a.position} (danger zone on P0 keyword!)`);
-    } else if (a.type === 'comp_rise') {
-      lines.push(`⚠️ *"${a.keyword}"* — ${a.competitor} rose from #${a.from} to #${a.to} (↑${a.rise} spots)`);
-    } else if (a.type === 'comp_top3') {
-      lines.push(`🚨 *"${a.keyword}"* — ${a.competitor} entered top 3 at #${a.position}`);
-    }
-  });
-  lines.push('\n📊 Full dashboard: https://ngnbthuy123131.github.io/chatty-listing-tracker/');
-  return lines.join('\n');
-}
-
-function buildBiweeklyReport(current, twoWeeksAgo) {
-  const today = new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
-  const lines = [
-    `:bar_chart: *Chatty Bi-Weekly Ranking Report — ${today}*\n`,
-    '*Keyword performance (organic rank):*',
-  ];
-
-  const prevMap = {};
-  if (twoWeeksAgo) twoWeeksAgo.results.forEach(r => { prevMap[r.keyword] = r; });
-
-  current.results.forEach(r => {
-    const prev = prevMap[r.keyword];
-    const curr = r.organicPosition;
-    const prevPos = prev?.organicPosition;
-    let change = '';
-    if (curr && prevPos) {
-      const diff = curr - prevPos;
-      if (diff < 0) change = ` *(↑${Math.abs(diff)})*`;
-      else if (diff > 0) change = ` *(↓${diff})*`;
-      else change = ' *(=)*';
-    }
-    const isP0 = P0_KEYWORDS.includes(r.keyword) ? ' ⭐' : '';
-    lines.push(`${rankEmoji(curr)} *"${r.keyword}"*${isP0} — #${curr || '—'}${change}`);
-  });
-
-  lines.push('\n📊 Full dashboard: https://ngnbthuy123131.github.io/chatty-listing-tracker/');
-  return lines.join('\n');
-}
-
 // ─── State helpers ─────────────────────────────────────────────────────────
 function loadState() {
   if (!fs.existsSync(STATE_FILE)) return { lastReportDate: null };
@@ -217,11 +153,6 @@ function saveState(state) {
 // ─── Main ──────────────────────────────────────────────────────────────────
 async function run() {
   console.log(`\n=== Chatty Daily Rank Check — ${new Date().toLocaleString()} ===\n`);
-
-  if (!SLACK_TOKEN) {
-    console.error('ERROR: SLACK_TOKEN env var not set');
-    process.exit(1);
-  }
 
   let log = [];
   if (fs.existsSync(LOG_FILE)) { try { log = JSON.parse(fs.readFileSync(LOG_FILE, 'utf8')); } catch {} }
@@ -250,11 +181,9 @@ async function run() {
   // ── Alert check ──────────────────────────────────────────────────────────
   const alerts = detectAlerts(current, previous);
   if (alerts.length > 0) {
-    console.log(`\n🚨 ${alerts.length} alert(s) detected — Slack report disabled`);
-    await slackPost(buildAlertMessage(alerts));
-    console.log('Slack alert skipped.');
+    console.log(`\n${alerts.length} alert(s) detected. Slack report is off.`);
   } else {
-    console.log('\nNo major changes detected. No alert sent.');
+    console.log('\nNo major changes detected.');
   }
 
   // ── Bi-weekly report ─────────────────────────────────────────────────────
@@ -264,13 +193,9 @@ async function run() {
   const daysSince  = lastReport ? Math.floor((today - lastReport) / (1000 * 60 * 60 * 24)) : 999;
 
   if (daysSince >= 14) {
-    console.log('\n📊 Bi-weekly report due — Slack report disabled');
-    const twoWeeksAgoDate = new Date(today - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-    const twoWeeksAgo = log.filter(e => e.date <= twoWeeksAgoDate && e.results.some(r => r.organicPosition !== undefined)).slice(-1)[0] || null;
-    await slackPost(buildBiweeklyReport(current, twoWeeksAgo));
+    console.log('\nBi-weekly report due. Slack report is off.');
     state.lastReportDate = today.toISOString().split('T')[0];
     saveState(state);
-    console.log('Bi-weekly report skipped.');
   } else {
     console.log(`Next bi-weekly report in ${14 - daysSince} day(s).`);
   }

@@ -33,7 +33,6 @@ jobs:
 
       - name: Run rank check
         env:
-          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: node rank-check-daily.cjs
 
