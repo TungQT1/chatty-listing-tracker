@@ -1,10 +1,7 @@
 name: Chatty Daily Rank Check
 
 on:
-  schedule:
-    # 8pm Bangkok = 13:00 UTC
-    - cron: '0 13 * * *'
-  workflow_dispatch: # allow manual trigger
+  workflow_dispatch: # cron off — do not schedule
 
 permissions:
   contents: write
